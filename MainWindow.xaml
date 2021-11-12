@@ -1,0 +1,22 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aner_Editor"
+        xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Class="Aner_Editor.MainWindow"
+        mc:Ignorable="d"
+        Title="Aner Editor" Height="450" Width="800">
+    <Grid>
+        <Menu FontFamily="Arial" Background="#FF4D4D4D">
+            <MenuItem Height="20" Width="33" Header="File" FontFamily="Bahnschrift Light Condensed">
+                <Button Content="Save" Name="menu_file_save" Click="menu_file_save_Click"/>
+                <!--<Button Content="Save As" Name="menu_file_saveas" Click="menu_file_saveas_Click"/>-->
+
+                <Button Content="Quit" Name="menu_file_quit" Click="menu_file_quit_Click"/>
+            </MenuItem>
+        </Menu>
+        <TextBox Background="#FF1E1E1E"  x:Name="editor" Foreground="#FF797979" TextChanged="text_TextChanged" Margin="0,21,0,0"/>
+        <TextBlock x:Name="history"  MouseEnter="history_MouseEnter" MouseLeave="history_MouseLeave" Margin="707,387,10,10" Background="#FF2E2E2E" Width="83" Height="37"/>
+    </Grid>
+</Window>

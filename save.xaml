@@ -1,0 +1,18 @@
+﻿<Window x:Class="Aner_Editor.save"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Aner_Editor"
+        mc:Ignorable="d"
+        Title="Save" Height="205" Width="401" WindowStyle="ToolWindow" ResizeMode="NoResize" Background="#FF1F1F1F">
+    <Grid Margin="0,0,0,-6">
+        <Label Content="Path:" HorizontalAlignment="Left" Height="26" Margin="19,19,0,0" VerticalAlignment="Top" Width="73" Background="#FF1F1F1F" Foreground="White"/>
+        <TextBox x:Name="PATH" HorizontalAlignment="Left" Height="24" Margin="97,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" Background="#FF3D3D3D" FontSize="14" Foreground="White"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Height="26" Margin="19,62,0,0" VerticalAlignment="Top" Width="73" Background="#FF1F1F1F" Foreground="White"/>
+        <TextBox x:Name="FILE" HorizontalAlignment="Left" Height="24" Margin="97,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="269" Background="#FF3D3D3D" Foreground="White" FontSize="14"/>
+        <Button Content="Cancel" Name="btn_cancel" HorizontalAlignment="Left" Height="20" Margin="10,121,0,0" VerticalAlignment="Top" Width="90" Background="#FF424242" Foreground="#FF9F9898" Click="btn_cancel_Click"/>
+        <Button Content="Save" Name="btn_save" HorizontalAlignment="Left" Height="20" Margin="306,121,0,0" VerticalAlignment="Top" Width="79" Background="#FF424242" Foreground="#FFA49898" Click="btn_save_Click"/>
+
+    </Grid>
+</Window>
